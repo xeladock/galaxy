@@ -1,0 +1,19 @@
+---
+- hosts: local
+  become:
+    true
+  become_method:
+    su
+  become_user:
+    root
+  remote_user:
+    ansible
+  roles:
+#   - epel
+#   - nginx
+   - role: nginx
+     tags: [nginx]   
+   - role: epel
+     tags: [epel]
+   - role: mariadb
+     tags: [mariadb]
