@@ -12,8 +12,3 @@
 #   - epel
 #   - nginx
    - role: nginx
-     tags: [nginx]   
-   - role: epel
-     tags: [epel]
-   - role: mariadb
-     tags: [mariadb]
